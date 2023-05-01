@@ -1,0 +1,493 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.border-purple {
+  padding: 14px;
+  /* border: 1px solid rgb(77, 40, 210); */
+  border-radius: 14px;
+}
+
+.outside-container {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.outside-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.main-page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-title {
+  text-align: left;
+}
+
+.main-left {
+  min-width: 400px;
+}
+
+.main-right {
+  margin-top: 100px;
+}
+
+.welcome-info {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.main-title h3::after {
+	content: "";
+  margin-top: 14px;
+	display: block;
+    background: linear-gradient(to right, #d8e5e7, #8deff2);
+    width: 100%;
+    height: 4px;
+}
+
+.prompt-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 18px;
+}
+
+.new-game-section {
+  width: 300px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.game-title-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.placement-title {
+  justify-content: center;
+}
+
+.game-title-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 20px;
+  min-height: 250px;
+}
+
+.game-title-right {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.game-title-h1, h4, h5, h6, h7 {
+  margin: 0
+}
+
+.control-button-section {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin-left: 20px;
+}
+
+.control-button {
+  background-color: rgb(77, 40, 210);
+  padding: 5px 20px;
+  margin-top: 30px;
+}
+
+.player-display-section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.player-display-right {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 10px;
+  height: 200px;
+}
+
+.each-player-info {
+  margin: 10px;
+}
+
+.game-board-section {
+  width: 750px;
+  height: 650px;
+  background-color: transparent;
+  position: relative;
+  margin-top: 15px;
+  margin-right: 15px;
+  border-radius: 20px;
+  /* border: 1px solid rgb(77, 40, 210); */
+}
+
+.game-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 750px;
+  height: 650px;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.game-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-tech-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resource-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 140px;
+}
+
+.resource-info-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.resource-content {
+  margin-bottom: 15px;
+}
+
+.last-round-info {
+  margin: 10px auto;
+}
+
+.last-round-list {
+  margin-top: 10px;
+  height: 220px;
+  overflow-y: scroll;
+  border-top: 3px solid white;
+}
+
+.last-round-list::-webkit-scrollbar {
+  display: none;
+}
+
+.last-round-list-item {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.last-round-each-attacker {
+  margin-left: 20px;
+}
+
+.this-round-order {
+  margin-bottom: 10px;
+}
+
+.this-round-list {
+  margin-top: 10px;
+  height: 220px;
+  overflow-y: scroll;
+  border-top: 3px solid white;
+}
+
+.this-round-list::-webkit-scrollbar {
+  display: none;
+}
+
+.order-button-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-button {
+  padding: 5px 22px;
+}
+
+.placement-player-info {
+  margin-bottom: 20px;
+}
+
+.placement-tips {
+  margin-bottom: 20px;
+}
+
+.units-left-info {
+  margin-bottom: 20px;
+}
+
+.placement-enter-section {
+  min-height: 250px;
+  margin-bottom: 20px;
+}
+
+.game-board-background {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:space-between;
+}
+
+.option-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.level-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.level-label {
+  margin-right: 10px;
+}
+
+.option-titles {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.margin-bottom {
+  padding-bottom: 10px;
+}
+
+.tips-display-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.redirect-text {
+  color: blue;
+  font-weight: 'bold';
+}
+
+.redirect-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lost-tip-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-outside-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whole-content {
+  margin-top: 20px;
+}
+
+.redirect-intro-label {
+  cursor: pointer;
+}
+
+/* The following CSS are cited from the following site to create pretty team introduction page:
+https://codepen.io/RajRajeshDn/pen/aMedXe */
+
+.wrapper{
+  margin-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper h1{
+  font-family: 'Yatra One', cursive;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.our_team{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.our_team .team_member{
+  width: 250px;
+  margin: 5px;
+
+  padding: 20px 10px;
+}
+
+.our_team .team_member .member_img{
+  background: #e9e5fa;  
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.our_team .team_member .special_img{
+  background: #e9e5fa;  
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.our_team .team_member .xiwen_img{
+  background: #e9e5fa;  
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.our_team .team_member .member_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.our_team .team_member .special_img img{
+  width: 70%;
+  height: 100%;
+}
+
+.our_team .team_member .xiwen_img img{
+  width: 100%;
+  height: 90%;
+  transform: translateY(11px);
+}
+
+.our_team .team_member h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+}
+
+.our_team .team_member span{
+  font-size: 10px;
+}
+
+.our_team .team_member p{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.our_team .team_member .member_img .social_media{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0,0,0,0.65);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+   transition: all 0.5s ease;
+}
+
+.our_team .team_member .member_img .social_media .item{
+  margin: 0 10px;
+}
+
+.our_team .team_member .member_img .social_media .fab{
+  color: #8c7ae6;
+  font-size: 20px;
+}
+
+.intro-back {
+  width: 15px;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: underline;
+}
