@@ -11,7 +11,7 @@ Yingxu Wang - Front-end
 <br />
 Before you pull this repo, ensure you have node version 16 and yarn installed.  
 <br />
-After you pull this repo, you should then run:  
+After you pull this repo, you should go to /front-end folder and then run:  
 yarn install  
 <br />
 yarn start  
