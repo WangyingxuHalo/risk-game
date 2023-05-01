@@ -1,12 +1,12 @@
-# Risk Game Team 4
+# Risk Game Team 4 - front-end repo  
 ## Team Member
-Raza Lamb - Back-end
+Raza Lamb
 <br />
-Shravan Mysore Seetharam - Back-end
+Shravan Mysore Seetharam
 <br />
-Xiwen Shen - Product Manager
+Xiwen Shen
 <br />
-Yingxu Wang - Front-end
+Yingxu Wang
 <br />
 <br />
 Before you pull this repo, ensure you have node version 16 and yarn installed.  
